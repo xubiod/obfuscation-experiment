@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>I abused a JS obfuscator</title>
+        <style>
+            html {
+                background-color: whitesmoke;
+            }
+            body {
+                background-color: white;
+                max-width: 75em;
+                margin: 0 auto;
+                padding: 1em 2em;
+            }
+            span {
+                background-color: yellow;
+            }
+            span.orange {
+                background-color: orange;
+            }
+            span.red {
+                background-color: orangered;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>foreword</h2>
+        <p>this was an experiment i decided to try. it started as how ugly can i make a very small piece of js i wrote.</p>
+        <p>turns out, a <em>lot</em>. file sizes exploded and later attempts to deobufscate still led to massive files being made. deobufscators are not magic, i know, but i still wanted to know what would happen.</p>
+        <p>all file sizes reported are from windows 10, so technically kibibytes and mebibytes. you can look at it for yourself if you want the specific numbers.</p>
+        <hr />
+        <h2>original</h2>
+        <p><a href="./enforce-https.js">enforce-https.js</a> (242 characters, 242b (really 591b)) - the original, character count doesn't count the comment and comment wasn't given to the services</p>
+        <hr />
+        <h2>obfuscated with obfuscator.io<sub>[1]</sub></h2>
+        <p><a href="./obf/enforce-https.obf.js">enforce-https.obf.js</a> (122,125 characters, 119kb) - high obf with unicode escape sequence with the original</p>
+        <p><a href="./obf/enforce-https.obfobf.js">enforce-https.obfobf.js</a> (2,852,529 characters, <span>2.71mb</span>) - high obf with unicode escape sequence with the already obfuscated js</p>
+        <hr />
+        <h2>ran through jsfuck.com</h2>
+        <p><a href="./obf/enforce-https.fuk.js">enforce-https.fuk.js</a> (19,483 characters, 19kb) - jsfuck of the original</p>
+        <p><a href="./obf/enforce-https.fukfuk.js">enforce-https.fukfuk.js</a> (1,133,456 characters, <span>1.08mb</span>) - jsfuck of the jsfuck</p>
+        <hr />
+        <h2>combos of jsfuck + obfuscator<sub>[1]</sub></h2>
+        <p><a href="./obf/enforce-https.fukobf.js">enforce-https.fukobf.js</a> (87,610 characters, 85.5kb) - same obfuscation as normal, but was given jsfuck</p>
+        <p><a href="./obf/enforce-https.obffuk.js">enforce-https.obffuk.js</a> (5,147,890 characters, <span class="orange">4.90mb</span>) - layer 1 obfuscation was given to jsfuck</p>
+        <hr />
+        <h2>deobfuscation results<sub>[2]</sub></h2>
+        <h4>jsnice<sub>[2]</sub></h4>
+        <p><a href="./deobf/nice/enforce-https.nice.js">enforce-https.nice.js</a> (unminified, 374b) - original was given to js nice<sub>[3]</sub></p>
+        <p><a href="./deobf/nice/enforce-https.obf.nice.js">enforce-https.obf.nice.js</a> (unminified, 111kb) - layer 1 obfuscated was given to js nice</p>
+        <p><a href="./deobf/nice/enforce-https.fuk.nice.js">enforce-https.fuk.nice.js</a> (unminified, 24.7kb) - layer 1 jsfuck was given to js nice</p>
+        <p><a href="./deobf/nice/enforce-https.fukobf.nice.js">enforce-https.fukobf.nice.js</a> (unminified, 130kb) - obfuscated jsfuck was given to js nice</p>
+        <h4>codeamaze</h4>
+        <p><a href="./deobf/amaze/enforce-https.amaze.js">enforce-https.amaze.js</a> (unminified, 294b) - original was given to codeamaze<sub>[3]</sub></p>
+        <p><a href="./deobf/amaze/enforce-https.obf.amaze.js">enforce-https.obf.amaze.js</a> (unminified, 153kb) - layer 1 obfuscated was given to codeamaze</p>
+        <p><a href="./deobf/amaze/enforce-https.obfobf.amaze.js">enforce-https.obfobf.amaze.js</a> (unminified, <span class="orange">3.66mb</span>) - layer 2 obfuscated was given to codeamaze</p>
+        <p><a href="./deobf/amaze/enforce-https.fuk.amaze.js">enforce-https.fuk.amaze.js</a> (unminified, 25.1kb) - layer 1 jsfuck was given to codeamaze</p>
+        <p><a href="./deobf/amaze/enforce-https.fukfuk.amaze.js">enforce-https.fukfuk.amaze.js</a> (unminified, <span>1.43mb</span>) - layer 2 jsfuck was given to codeamaze</p>
+        <p><a href="./deobf/amaze/enforce-https.fukobf.amaze.js">enforce-https.fukobf.amaze.js</a> (unminified, 111kb) - obfuscated jsfuck was given to codeamaze</p>
+        <p><a href="./deobf/amaze/enforce-https.obffuk.amaze.js">enforce-https.obffuk.amaze.js</a> (unminified, <span class="red">6.59mb</span><sub>[4]</sub>) - jsfuck obfuscated was given to codeamaze</p>
+        <h4>jsunfuck<sub>[2][5]</sub></h4>
+        <p><a href="./deobf/unfuk/enforce-https.unfuk.js">enforce-https.unfuk.js</a> (unminified, 1.79kb) - original was given to jsunfuck</p>
+        <p><a href="./deobf/unfuk/enforce-https.fuk.unfuk.js">enforce-https.fuk.unfuk.js</a> (unminified, 899b) - layer 1 jsfuck was given to jsunfuck</p>
+        <p><a href="./deobf/unfuk/enforce-https.fukfuk.unfuk.js">enforce-https.fukfuk.unfuk.js</a> (unminified, 66.9kb) - layer 2 jsfuck was given to jsunfuck</p>
+        <hr />
+        <h2>footnotes</h2>
+        <p><sub>[1] - used options preset high, targeted at browser no eval. additional settings include unicode escape sequences turned on. some of the bloated filesize can be blamed on dead code injection</sub></p>
+        <p><sub>[2] - if a combination isn't shown, the deobufscator couldn't handle it. jsnice had internal compiler errors on layer 2 jsfuck and has a 2mb limit. jsunfuck was unable to deal with <code>enforce-https.obffuk.js</code> due to a stack overflow.</sub></p>
+        <p><sub>[3] - deobufscators were given the originals has a control</sub></p>
+        <p><sub>[4] - the biggest file generated, codeamaze deobufscating obfuscated jsfuck code</sub></p>
+        <p><sub>[5] - jsunfuck is a java command line jar. jsunfuck v1.1 was used run with <code>java -jar jsunfuck-1.1.jar --js_output_file=out.js in.js</code> with no other parameters. was obtained with github versioning. java environment was 1.8.0_241, jre 1.8.0_241-b07, jvm 25.241-b07 64-bit mixed mode, on windows 10 home v2004 build 18041.844, experience wfep v120.2212.551.0, 64-bit on 64-bit architecture.</sub></p>
+    </body>
+</html>
