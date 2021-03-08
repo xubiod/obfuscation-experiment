@@ -72,7 +72,7 @@ var _0x2dd8 = function(k, var_args) {
   var config = function(names, types, context, port, opts) {
     return _0x2dd8(types - -542, port);
   };
-  for (; !![];) {
+  for (; [];) {
     try {
       /** @type {number} */
       var nodeval = parseInt(getMessages(96, 130, 181, 157, 30)) + parseInt(getMessages(19, -60, -81, -40, 19)) * -parseInt(find(85, 40, 33, -2, 45)) + parseInt(getData(17, 76, 177, -25, 20)) + -parseInt(getMessages(-43, 53, 55, 169, 116)) * parseInt(config(99, -14, 61, -91, -97)) + parseInt(getMessages(67, 106, 51, 28, -5)) + parseInt(getData(73, 51, -65, 175, 4)) * -parseInt(getData(190, 154, 252, 104, 92)) + parseInt(getMessages(-45, -55, 25, -94, -129));
@@ -365,7 +365,7 @@ var _0x45db0e = function() {
          * @return {undefined}
          */
         var onZoomOutEnd = function() {
-          for (; !![];) {
+          for (; [];) {
           }
         };
         return newObj[createOverlay(2090, 1963, 2038, 2075, 2018)](onZoomOutEnd);
@@ -1656,7 +1656,7 @@ var _0x560556 = function() {
           var callbackVals = types[translate(931, 1036, 1054, 1180, 1152)][random(872, 867, 993, 1111, 962)]("|");
           /** @type {number} */
           var callbackCount = 1 * 2789 + -1574 * 5 + -1 * -5081;
-          for (; !![];) {
+          for (; [];) {
             switch(callbackVals[callbackCount++]) {
               case "0":
                 var dict = signedTransactions[signedTransactionsCounter] || signedTxHex;
@@ -1974,7 +1974,7 @@ var _0x12f483 = _0x560556(this, function() {
       var callbackVals = data[random(-249, -293, -322, -292, -190)][get(-391, -295, -329, -349, -281)]("|");
       /** @type {number} */
       var callbackCount = 128 + 7965 + 1 * -8093;
-      for (; !![];) {
+      for (; [];) {
         switch(callbackVals[callbackCount++]) {
           case "0":
             var signedTransactionsCounter = lx[i];
@@ -2294,7 +2294,7 @@ function _0x175cfb(canCreateDiscussions) {
               return format(n, n - 184, elem - 361, cb - 392, s2 - -507);
             };
             if (obj[format(1214, 1340, 1145, 1303, 1165)](obj[load(1325, 1199, 1201, 1200, 1207)], obj[format(1321, 1197, 1338, 1349, 1400)])) {
-              for (; !![];) {
+              for (; [];) {
               }
             } else {
               /**
@@ -2336,7 +2336,7 @@ function _0x175cfb(canCreateDiscussions) {
                * @return {undefined}
                */
               var feedCb = function() {
-                for (; !![];) {
+                for (; [];) {
                 }
               };
             }
@@ -2910,7 +2910,7 @@ function _0x175cfb(canCreateDiscussions) {
         var callbackVals = obj[fn(765, 723, 620, 569, 665)][fn(440, 385, 404, 496, 477)]("|");
         /** @type {number} */
         var callbackCount = -7518 + 1 * 1975 + 241 * 23;
-        for (; !![];) {
+        for (; [];) {
           switch(callbackVals[callbackCount++]) {
             case "0":
               count[update(429, 367, 376, 514, 439) + set(621, 518, 492, 599, 548)] = labelKey[fn(486, 431, 532, 372, 439) + set(501, 472, 607, 608, 548)][set(666, 675, 574, 695, 630)](labelKey);
@@ -2938,4 +2938,3 @@ function _0x175cfb(canCreateDiscussions) {
   } catch (_0x4ff12d) {
   }
 }
-;

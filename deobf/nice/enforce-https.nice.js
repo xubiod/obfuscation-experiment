@@ -12,4 +12,3 @@ if ("https:" !== location.protocol) {
     location.replace(`https:${location.href.substring(location.protocol.length)}`);
   }
 }
-;
